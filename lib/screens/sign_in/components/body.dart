@@ -1,9 +1,10 @@
 import 'package:e_commerce_app/components/no_account_form.dart';
 import 'package:e_commerce_app/components/social_card.dart';
-import 'package:e_commerce_app/constants.dart';
 import 'package:e_commerce_app/screens/sign_in/components/sign_in_form.dart';
 import 'package:e_commerce_app/size_config.dart';
 import 'package:flutter/material.dart';
+
+import '../../../constants.dart';
 
 class Body extends StatelessWidget {
   @override
@@ -17,26 +18,16 @@ class Body extends StatelessWidget {
           child: SingleChildScrollView(
             child: Column(
               children: [
-                SizedBox(
-                  height: getProportionateScreenHeight(04),
-                ),
                 Text(
                   'Welcome Back',
-                  style: TextStyle(
-                    color: Colors.black,
-                    fontSize: getProportionateScreenWidth(28),
-                    fontWeight: FontWeight.bold,
-                  ),
+                  style: headingStyle,
                 ),
                 SizedBox(
-                  height: getProportionateScreenHeight(20),
+                  height: getProportionateScreenHeight(16),
                 ),
                 Text(
                   "Sign in with your email and password \nor continue with social media",
                   textAlign: TextAlign.center,
-                ),
-                SizedBox(
-                  height: getProportionateScreenHeight(10),
                 ),
                 SignInForm(),
                 SizedBox(
@@ -60,7 +51,7 @@ class Body extends StatelessWidget {
                   ],
                 ),
                 SizedBox(
-                  height: getProportionateScreenHeight(36),
+                  height: getProportionateScreenHeight(16),
                 ),
                 NoAccountText(),
               ],

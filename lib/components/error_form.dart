@@ -4,13 +4,14 @@ import 'package:flutter_svg/svg.dart';
 import '../size_config.dart';
 
 class ErrorForm extends StatelessWidget {
+// constr ...
   const ErrorForm({
     Key key,
     @required this.errors,
   }) : super(key: key);
-
+// props ...
   final List<String> errors;
-
+// Main Build ...
   @override
   Widget build(BuildContext context) {
     return Column(
@@ -19,6 +20,7 @@ class ErrorForm extends StatelessWidget {
     );
   }
 
+//==============================================================================
   Row ErrorText(String error) {
     return Row(
       children: [

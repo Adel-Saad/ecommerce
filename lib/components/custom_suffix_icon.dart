@@ -4,12 +4,13 @@ import 'package:flutter_svg/svg.dart';
 import '../size_config.dart';
 
 class CustomSuffixIcon extends StatelessWidget {
+// props ...
   final String svgIcon;
-
+// constr ...
   const CustomSuffixIcon({
     @required this.svgIcon,
   });
-
+// Main Build ...
   @override
   Widget build(BuildContext context) {
     return Padding(
