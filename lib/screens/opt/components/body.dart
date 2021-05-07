@@ -1,4 +1,5 @@
 import 'package:e_commerce_app/components/default_button.dart';
+import 'package:e_commerce_app/screens/home/home.dart';
 import 'package:e_commerce_app/size_config.dart';
 import 'package:flutter/material.dart';
 import '../components/otp_form.dart';
@@ -36,7 +37,9 @@ class Body extends StatelessWidget {
                 height: SizeConfig.screenHeight * 0.15,
               ),
               DefaultButton(
-                press: () {},
+                press: () {
+                  Navigator.pushNamed(context, HomeScreen.routeName);
+                },
                 text: "Continue",
               ),
               SizedBox(

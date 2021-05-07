@@ -1,4 +1,5 @@
 import 'package:e_commerce_app/components/default_button.dart';
+import 'package:e_commerce_app/screens/home/home.dart';
 import 'package:e_commerce_app/size_config.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
@@ -33,7 +34,9 @@ class Body extends StatelessWidget {
             horizontal: SizeConfig.screenWidth * 0.20,
           ),
           child: DefaultButton(
-            press: () {},
+            press: () {
+              Navigator.pushNamed(context, HomeScreen.routeName);
+            },
             text: "Back to Home",
           ),
         ),
