@@ -14,7 +14,7 @@ class Product {
     @required this.colors,
     this.rating = 0.0,
     this.isFavourite = false,
-    this.isPopular = false,
+    this.isPopular = true,
     @required this.title,
     @required this.price,
     @required this.description,

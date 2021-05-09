@@ -1,4 +1,5 @@
 import 'package:e_commerce_app/screens/complete_profile/complete_profile.dart';
+import 'package:e_commerce_app/screens/details/details.dart';
 import 'package:e_commerce_app/screens/forget_password/forgot_password.dart';
 import 'package:e_commerce_app/screens/home/home.dart';
 import 'package:e_commerce_app/screens/login_success/log_in_success.dart';
@@ -17,4 +18,5 @@ final Map<String, WidgetBuilder> routes = {
   CompleteProfile.routeName: (context) => CompleteProfile(),
   OtpScreen.routeName: (context) => OtpScreen(),
   HomeScreen.routeName: (context) => HomeScreen(),
+  DetailsScreen.routeName: (context) => DetailsScreen(),
 };
